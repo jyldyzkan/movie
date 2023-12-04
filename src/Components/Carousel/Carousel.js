@@ -19,7 +19,6 @@ const Carousel = ({movies}) => {
                     disableOnInteraction: false
                 }}
                 modules={[EffectFade, Navigation, Pagination, Autoplay]}
-                className="mySwiper"
             >
                 {
                     movies.map(el => (

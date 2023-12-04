@@ -28,19 +28,114 @@ code {
 .row{
   display: flex;
   flex-wrap: wrap;
+  margin: 15px;
 }
 img{
   width: 100%;
 }
-.col-3{
-  width: 25%;
+.col-8{
+  width:66.66%;
   margin: 15px;
 }
-h3,p{
+.col-3{
+  width:25%;
+  margin: 15px;
+}
+.col-4{
+  width:33.33%;
+  margin: 15px;
+}
+h3,p,h1,h2{
   color: white;
 }
 
 header img{
   width: 150px;
   max-width: 100%;
+}
+.homeBtn, .searchBtn{
+  padding: 10px 25px;
+  background: -webkit-gradient(linear,left top,right top,from(#ff5c4d),color-stop(26.56%,#eb469f),color-stop(75%,#8341ef),to(#3f68f9));
+  text-decoration: none;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.mySwiper{
+  height: 100vh;
+}
+.searchInput{
+  padding: 10px 25px;
+  background:white;
+  border-radius: 15px;
+  color: #090808;
+  font-size: 15px;
+  border: none;
+}
+.search-cont{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.box{
+  background: linear-gradient( 149deg, #192247 0%, #210e17 96.86% );
+  padding: 25px 30px;
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.box h3:hover{
+  color: #f50;
+}
+.box img{
+  border-radius: 15px;
+}
+
+ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: black;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+header{
+
+  background-color: #141414;
+  padding: 30px 0;
+}
+.header-container{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav{
+  display: flex;
+  gap: 80px;
+}
+span{
+  font-size: 15px;
+  color: white;
+}
+.inner{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-inner{
+  margin-top: 20px;
+display: flex;
+  flex-direction: column;
+  gap: 20px;
+
 }
