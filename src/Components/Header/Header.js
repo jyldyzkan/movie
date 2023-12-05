@@ -7,7 +7,7 @@ const Header = () => {
             <div className={'header'}>
                 <Link to={'/'}>
                     <div className="header-logotype">
-                        <a href="/"><span className="logotype-text ">SOFTBOX  <span>TV</span></span></a>
+                        <a href="/"><span className="logotype-text ">MOVIE  <span>TV</span></span></a>
                     </div>
                 </Link>
                 <nav>
