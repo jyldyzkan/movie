@@ -10,6 +10,7 @@ const AppRouts = () => {
             <Route path="/" element={<HomePage/> }/>
             <Route path="/movie/:id" element={<MoviePage/>}/>
             <Route path={'/search'} element={<SearchPage/>}/>
+            <Route path={''}/>
         </Routes>
     )
 }

@@ -19,11 +19,17 @@ const SearchPage=()=>{
 
     return(
         <div className={'container'}>
-            <h2>Найти фильм</h2>
-            <div className={'search-cont'}>
-                <input className={'searchInput'} placeholder={'Фильмы, сериалы'} type="text" onChange={(e)=>setSearch(e.target.value)}/>
-                <button className={'searchBtn'} onClick={handleSearch}>Найти</button>
-            </div>
+
+              <div className="header">
+                  <h2>Найти фильм</h2>
+                  <button className={"searchBtn"}> <Link  to={'/'}>Главное</Link></button>
+              </div>
+
+              <div className={'search'}>
+                  <input className={'searchInput'} placeholder={'Фильмы, сериалы'} type="text" onChange={(e)=>setSearch(e.target.value)}/>
+                  <button className={'searchBtn'} onClick={handleSearch}>Найти</button>
+              </div>
+
 
             {
                 searchResult.map((movie)=>(
@@ -34,10 +40,10 @@ const SearchPage=()=>{
                             <p className={'moves_date'}>{movie.release_date}</p>
                         </div>
                         <div className="col-8">
-                            <h1>{movie.title}</h1>
-                            <div className={'moves_info inner-box'}>
-                                <h2>О Фильме</h2>
-                                <span>{movie.overview}</span>
+                            <div className={'btn-inner'}>
+                                <h2>{movie.title}</h2>
+                                <h3>О Фильме</h3>
+                                <p>{movie.overview}</p>
                             </div>
 
                            <div className={"btn-inner"}>
