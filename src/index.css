@@ -38,8 +38,8 @@ img{
   width:66.66%;
   margin: 15px;
 }
-.col-3{
-  width:25%;
+.col-5{
+  width:16.66%;
   margin: 15px;
 }
 .col-4{
@@ -63,6 +63,16 @@ background: rgba(255, 0, 0, 0.86);
 font-size: 18px;
   cursor: pointer;
 }
+
+button:hover {
+  box-shadow: 0 0 10px #ff0000,
+  0 0 20px #ff0026,
+  0 0 40px #ff0000,
+  0 0 80px #ff0015,
+  0 0 100px #ff0000;
+  background: #0e0e0e;
+}
+
 .searchBtn{
   background: rgba(255, 0, 0, 0.39);
   color: white;

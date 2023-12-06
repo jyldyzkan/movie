@@ -10,14 +10,14 @@ const MovieList = ({movies}) => {
         <div className={'row'}>
             {
                 movies.map(movie =>
-                    <div className={'col-3'}>
+                    <div className={'col-5'}>
                         <div className={'movie-box'}>
                             <img className={'movie-img'}
                                  src={`${IMAGE_URL}${movie.poster_path}`} alt=""/>
                             <h3>{movie.title}</h3>
-                            <p>
+                            <h4>
                                 {movie.vote_average}
-                            </p>
+                            </h4>
 
                         </div>
                     </div>

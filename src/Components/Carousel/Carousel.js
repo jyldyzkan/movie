@@ -9,6 +9,8 @@ import './style.css';
 import {BACKDROP_URL} from "../../config/config";
 
 const Carousel = ({movies}) => {
+
+
     return (
         <div className={'container'}>
             <Swiper
@@ -27,6 +29,7 @@ const Carousel = ({movies}) => {
                         </SwiperSlide>
                     ))
                 }
+
             </Swiper>
         </div>
     )
